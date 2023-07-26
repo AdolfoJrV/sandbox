@@ -57,8 +57,8 @@ header h4 {
 }
 
 #main1 {
-  min-width: 400px;
-  max-width: 600px;
+  min-width: 300px;
+  max-width: 500px;
   display: none;
   display: flex;
   flex-direction: column;
