@@ -27,7 +27,7 @@ function processData() {
     inputPostal.toUpperCase(),
     inputTelephone,
     inputEmail,
-    formatDate(inputDate),
+    formatDate(inputDate)
   );
 }
 
@@ -205,6 +205,28 @@ document.addEventListener("DOMContentLoaded", function () {
       checkOut.disabled = true;
     }
   });
+
+  // Disables the checkout when quantity is changed.
+  qtyVegetables.addEventListener("change", function () {
+    if (this.click) {
+      checkOut.disabled = true;
+    }
+  });
+  qtyFruit.addEventListener("change", function () {
+    if (this.click) {
+      checkOut.disabled = true;
+    }
+  });
+  qtyChicken.addEventListener("change", function () {
+    if (this.click) {
+      checkOut.disabled = true;
+    }
+  });
+  qtyPork.addEventListener("change", function () {
+    if (this.click) {
+      checkOut.disabled = true;
+    }
+  });
 });
 
 function purchase() {
@@ -226,11 +248,11 @@ function purchase() {
   const priceOfPork = 5.0;
 
   qtyVegetables = checkIfNan(
-    parseFloat(document.getElementById("qtyVegetables").value),
+    parseFloat(document.getElementById("qtyVegetables").value)
   );
   qtyFruit = checkIfNan(parseFloat(document.getElementById("qtyFruit").value));
   qtyChicken = checkIfNan(
-    parseFloat(document.getElementById("qtyChicken").value),
+    parseFloat(document.getElementById("qtyChicken").value)
   );
   qtyPork = checkIfNan(parseFloat(document.getElementById("qtyPork").value));
 
