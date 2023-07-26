@@ -24,7 +24,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3%;
+  padding-top: 3%;
   font-family: "Satisfy", cursive;
   font-size: 2rem;
   color: black;
