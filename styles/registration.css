@@ -57,7 +57,7 @@ header h4 {
 }
 
 #main1 {
-  width: 20%;
+  width: 300px;
   display: none;
   display: flex;
   flex-direction: column;
