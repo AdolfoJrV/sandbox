@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Calgary Search Assistant</title>
+    <link href="styles/style2.css" rel="stylesheet" type="text/css">
+    <script src="script/building_permits.js"></script>
+  </head>
+  <body>
+    <header id="header_traffic_incidents">
+      <img src="images/search_icon.png" alt="Search Icon" width="70">
+      <h3>City of Calgary Building Permits Search</h3>
+      <form id="mainform">
+        <table id="input">
+          <tr>
+            <td>
+              <input type="radio" name="searchParameter" value="permitnum">
+              <span>Search by Permit Number:</span>
+            </td>
+            <td>
+              <input type="text" id="permitnum" disabled>
+            </td>
+            <td><span>i.e. BP2022-1234</span></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="radio"
+                name="searchParameter"
+                value="statuscurrent"
+             >
+              <span>Search by Status:</span>
+            </td>
+            <td>
+              <input type="text" id="statuscurrent" disabled>
+            </td>
+            <td><span></span></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="radio"
+                name="searchParameter"
+                value="permitclassmapped"
+             >
+              <span>Search by Map Classification:</span>
+            </td>
+            <td>
+              <input type="text" id="permitclassmapped" disabled>
+            </td>
+            <td><span></span></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="searchParameter" value="permittype">
+              <span>Search by Permit Type:</span>
+            </td>
+            <td>
+              <input type="text" id="permittype" disabled>
+            </td>
+            <td><span></span></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="radio"
+                name="searchParameter"
+                value="permitclassgroup"
+             >
+              <span>Search by Class Group:</span>
+            </td>
+            <td>
+              <input type="text" id="permitclassgroup" disabled>
+            </td>
+            <td><span></span></td>
+          </tr>
+        </table>
+      </form>
+      <nav>
+        <ul>
+          <li><a href="index.html">Main</a></li>
+          <li><a href="traffic_incidents.html">Traffic Incidents Search</a></li>
+          <li><a href="traffic_cameras.html">Traffic Cameras Search</a></li>
+          <li><a href="crime_stats.html">Crime Statistics Search</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <table id="searchResult4"></table>
+    </main>
+  </body>
+</html>

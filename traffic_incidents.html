@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Calgary Search Assistant</title>
+    <link href="styles/style2.css" rel="stylesheet" type="text/css">
+    <script src="script/traffic_incidents.js"></script>
+  </head>
+  <body>
+    <header id="header_traffic_incidents">
+      <img src="images/search_icon.png" alt="Search Icon" width="70">
+      <h3>City of Calgary Traffic Incidents Search</h3>
+      <form id="mainform">
+        <table id="input">
+          <tr>
+            <td>
+              <input
+                type="radio"
+                name="searchParameter"
+                value="incident_info"
+             >
+              <span>Search by Road Name:</span>
+            </td>
+            <td>
+              <input type="text" id="incident_info" disabled>
+            </td>
+            <td><span></span></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="searchParameter" value="description">
+              <span>Search by Description:</span>
+            </td>
+            <td>
+              <input type="text" id="description" disabled>
+            </td>
+            <td><span></span></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="searchParameter" value="start_dt">
+              <span>Search by Date:</span>
+            </td>
+            <td>
+              <input type="text" id="start_dt" disabled>
+            </td>
+            <td><span></span></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="searchParameter" value="quadrant">
+              <span>Search by Quadrant:</span>
+            </td>
+            <td>
+              <input type="text" id="quadrant" disabled>
+            </td>
+            <td><span>i.e. NE, NW, SE, SW</span></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="searchParameter" value="count">
+              <span>Search by Number of Incidents:</span>
+            </td>
+            <td>
+              <input type="text" id="count" disabled>
+            </td>
+            <td><span></span></td>
+          </tr>
+        </table>
+      </form>
+      <nav>
+        <ul>
+          <li><a href="index.html">Main</a></li>
+          <li><a href="traffic_cameras.html">Traffic Cameras Search</a></li>
+          <li><a href="crime_stats.html">Crime Statistics Search</a></li>
+          <li><a href="building_permits.html">Building Permits Search</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <table id="searchResult1"></table>
+    </main>
+  </body>
+</html>

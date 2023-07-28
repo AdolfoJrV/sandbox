@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Satisfy&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f4f5;
+  padding-bottom: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #DBDCDC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 20px solid #f4f4f5;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+p {
+  text-align: justify;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  min-width: 600px;
+  max-width: 800px;
+}
+
+#input {
+  width: 100%;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+#input tr td:first-child {
+  width: 45%
+}
+
+#input3 tr td:first-child {
+  width: 60%
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 210px;
+}
+
+
+#searchResult1 {
+  width: 95%;
+  border-collapse: collapse;
+}
+
+#searchResult1 tr td:nth-child(4),
+#searchResult1 tr td:last-child {
+  width: 5%;
+  text-align: center;
+}
+
+#searchResult1 th, 
+#searchResult1 td {
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+#searchResult1 thead {
+  background-color: lightgrey;
+  position: sticky;
+  top: 200px;
+  z-index: 1;
+}
+
+#searchResult1 tbody {
+  overflow-y: auto;
+}
+
+#searchResult2 {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+#searchResult2 tr td:nth-child(3) {
+  width: 5%;
+  text-align: center;
+}
+
+#searchResult2 th, 
+#searchResult2 td {
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+#searchResult2 thead {
+  background-color: lightgrey;
+  position: sticky;
+  top: 200px;
+  z-index: 1;
+}
+
+#searchResult2 tbody {
+  overflow-y: auto;
+}
+
+#searchResult3 {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+#searchResult3 tr td:nth-child(3),
+#searchResult3 tr td:nth-child(4),
+#searchResult3 tr td:nth-child(5) {
+  width: 5%;
+  text-align: center;
+}
+
+#searchResult3 th, 
+#searchResult3 td {
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+#searchResult3 thead {
+  background-color: lightgrey;
+  position: sticky;
+  top: 200px;
+  z-index: 1;
+}
+
+#searchResult3 tbody {
+  overflow-y: auto;
+}
+
+#searchResult4 {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+#searchResult4 tr td:nth-child(3),
+#searchResult4 tr td:nth-child(5) {
+  width: 15%;
+}
+
+#searchResult4 th, 
+#searchResult4 td {
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+#searchResult4 thead {
+  background-color: lightgrey;
+  position: sticky;
+  top: 200px;
+  z-index: 1;
+}
+
+#searchResult4 tbody {
+  overflow-y: auto;
+}

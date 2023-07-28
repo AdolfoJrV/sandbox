@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Calgary Search Assistant</title>
+    <link href="styles/style2.css" rel="stylesheet" type="text/css">
+    <script src="script/crime_stats.js"></script>
+  </head>
+  <body>
+    <header id="header_traffic_incidents">
+      <img src="images/search_icon.png" alt="Search Icon" width="70">
+      <h3>City of Calgary Crime Statistics Search</h3>
+      <form id="mainform">
+        <table id="input3">
+          <tr>
+            <td>
+              <input
+                type="radio"
+                name="searchParameter"
+                value="community_name"
+             >
+              <span>Search by Community Name:</span>
+            </td>
+            <td>
+              <input type="text" id="community_name" disabled>
+            </td>
+            <td><span></span></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="searchParameter" value="category">
+              <span>Search by Category:</span>
+            </td>
+            <td>
+              <input type="text" id="category" disabled>
+            </td>
+            <td><span></span></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="searchParameter" value="count">
+              <span>Search by Count:</span>
+            </td>
+            <td>
+              <input type="text" id="count" disabled>
+            </td>
+            <td><span></span></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="searchParameter" value="year">
+              <span>Search by Year:</span>
+            </td>
+            <td>
+              <input type="text" id="year" disabled>
+            </td>
+            <td><span></span></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="searchParameter" value="month">
+              <span>Search by Month:</span>
+            </td>
+            <td>
+              <input type="text" id="month" disabled>
+            </td>
+            <td><span></span></td>
+          </tr>
+        </table>
+      </form>
+      <nav>
+        <ul>
+          <li><a href="index.html">Main</a></li>
+          <li><a href="traffic_incidents.html">Traffic Incidents Search</a></li>
+          <li><a href="traffic_cameras.html">Traffic Cameras Search</a></li>
+          <li><a href="building_permits.html">Building Permits Search</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <table id="searchResult3"></table>
+    </main>
+  </body>
+</html>
